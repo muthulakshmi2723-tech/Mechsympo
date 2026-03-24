@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mechnovate '26 - Events</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: radial-gradient(circle at top, #020617, #0f172a);
+      color: white;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h2 {
+      color: #00f5ff;
+      font-size: 55px;
+      margin-bottom: 60px;
+      display: flex;
+      gap: 15px;
+    }
+
+    .btn-container {
+      display: flex;
+      gap: 40px;
+    }
+
+    .btn {
+      padding: 18px 45px;
+      font-size: 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .tech-btn {
+      background: linear-gradient(45deg, #00f5ff, #00c3ff);
+      color: black;
+      box-shadow: 0 0 25px #00f5ff;
+    }
+
+    .nontech-btn {
+      background: linear-gradient(45deg, #ff3b3b, #ff7a18);
+      color: white;
+      box-shadow: 0 0 25px #ff3b3b;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+    }
+
+    .home-btn {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      padding: 10px 20px;
+      background: #00f5ff;
+      color: black;
+      border-radius: 20px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<a href="symbo.html" class="home-btn">🏠 Home</a>
+
+<div class="hero">
+  <h2>🔥 Our Events</h2>
+
+  <div class="btn-container">
+    <a href="technical.html" class="btn tech-btn">Technical Events</a>
+    <a href="nontechnical.html" class="btn nontech-btn">Non-Technical Events</a>
+  </div>
+</div>
+
+</body>
+</html>
