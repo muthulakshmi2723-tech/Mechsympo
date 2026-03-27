@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mr. Mechanic</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* BACKGROUND */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top, #020617, #000);
+  color: white;
+  overflow-x: hidden;
+}
+
+/* GLOW EFFECT BACKGROUND */
+body::before {
+  content: "";
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  background: #00f5ff;
+  filter: blur(200px);
+  top: -100px;
+  left: -100px;
+  opacity: 0.2;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  background: #ff3b3b;
+  filter: blur(200px);
+  bottom: -100px;
+  right: -100px;
+  opacity: 0.2;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 950px;
+  margin: 60px auto;
+  padding: 40px;
+  border-radius: 25px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(25px);
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 40px rgba(0,245,255,0.15);
+  animation: fadeUp 0.8s ease;
+}
+
+/* TAG */
+.tag {
+  display: inline-block;
+  background: linear-gradient(90deg,#ff3b3b,#ff6b6b);
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+/* TITLE */
+h1 {
+  font-family: 'Orbitron';
+  font-size: 45px;
+  background: linear-gradient(90deg,#fff,#00f5ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  color: #00f5ff;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* DESCRIPTION */
+.desc {
+  color: #aaa;
+  line-height: 1.6;
+}
+
+/* INFO GRID */
+.info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.box {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: 0.3s;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0,245,255,0.3);
+}
+
+/* SECTION */
+.section {
+  margin-top: 35px;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.section h3 {
+  margin-bottom: 10px;
+  color: #00f5ff;
+}
+
+ul {
+  padding-left: 20px;
+  color: #bbb;
+}
+
+/* BUTTON */
+.btn {
+  display: block;
+  text-align: center;
+  margin-top: 40px;
+  padding: 16px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg,#d37640,#e0514c);
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0,245,255,0.6);
+}
+
+/* ANIMATION */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<span class="tag">TECHNICAL EVENT</span>
+
+<h1>Mr. MECHANIC</h1>
+<p class="subtitle">🔧 Mechanical Skills & Assembly Challenge</p>
+
+<p class="desc">
+A hands-on technical event that tests participants’ practical knowledge of mechanical components and assembly. 
+Participants must identify, handle, and assemble engine parts accurately within a given time, showcasing their 
+technical skills, precision, and problem-solving ability in real-world mechanical applications.
+</p>
+
+<div class="info">
+  <div class="box">👥 <b>Individual Participant</b></div>
+  <div class="box">🏆 <b>Prize Pool - ₹1300</b></div>
+</div>
+
+<div class="section">
+  <h3>📌 Prerequisites</h3>
+  <ul>
+    <ul>
+  <li>Participants should have basic knowledge of engine components and working principles</li>
+  <li>Familiarity with parts like piston, crankshaft, valves, cylinder head, etc., is required</li>
+  <li>Understanding of assembly sequence and tool handling is recommended</li>
+  <li>Participants must be comfortable using basic mechanical tools safely</li>
+  <li>Basic troubleshooting and identification skills will be an added advantage</li>
+  <li>Participants must report on time with proper registration</li>
+</ul>
+  </ul>
+</div>
+
+<div class="section">
+  <h3>📜 Rules</h3>
+  <ul>
+    <ul>
+  <li>Only individual participation is allowed</li>
+  <li>The disassembled engine components will be provided at the venue</li>
+  <li>Participants must assemble the engine within the given time limit</li>
+  <li>Proper sequence and correct fitting of components are mandatory</li>
+  <li>Points will be awarded based on accuracy, time taken, and assembly quality</li>
+  <li>Participants must use only the tools provided (or as instructed)</li>
+  <li>Any damage to components due to improper handling may lead to penalty</li>
+  <li>Seeking help from others or using external aids is strictly prohibited</li>
+  <li>Incomplete or incorrect assembly will result in lower scores or disqualification</li>
+  <li>Judges’ decision will be final and binding</li>
+</ul>
+  </ul>
+</div>
+
+<div class="section">
+  <h3>📤 General Instructions</h3>
+  <ul>
+    <ul>
+  <li>Safety precautions must be followed throughout the event </li>
+  <li> Participants should maintain discipline and follow coordinator instructions</li>
+  
+</ul>
+  </ul>
+</div>
+
+<div class="section">
+  <h3>📞 Contact</h3>
+  <p><b>AARON ARUL CHRISTOPHER A</b><br>+91 9003799446</p>
+</div>
+
+<a href="index.html" class="btn">🏠 Return to Home </a>
+
+</div>
+
+</body>
+</html>

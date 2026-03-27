@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Events - Mechnovate '26</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #020617, #000);
+  color: white;
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  backdrop-filter: blur(10px);
+  background: rgba(0,0,0,0.5);
+}
+
+nav h1 {
+  font-family: 'Orbitron';
+  background: linear-gradient(90deg,#00f5ff,#ff3b3b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color:  #fdfcfc;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00f5ff;
+}
+
+/* SECTION TITLE */
+.section-title {
+  font-size: 32px;
+  margin: 60px 50px 30px;
+  font-family: 'Orbitron';
+  background: linear-gradient(90deg,#ff3b3b,#00f5ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 3px;
+  background: linear-gradient(90deg,#ff3b3b,#00f5ff);
+  bottom: -8px;
+  left: 0;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 0 50px;
+}
+
+/* CARD */
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: 0.4s;
+  position: relative;
+  overflow: hidden;
+}
+
+/* glowing border */
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 1px;
+  background: linear-gradient(45deg,#ff3b3b,#00f5ff);
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 0 30px rgba(0,245,255,0.3);
+}
+
+/* ICON */
+.icon {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+/* TITLE */
+.card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* DESCRIPTION */
+.card p {
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* ANIMATION */
+.card {
+  animation: fadeUp 0.8s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <h1>MECNOVATE '26</h1>
+  <ul>
+    <li><a href="index.html">🏠 Home</a></li>
+  </ul>
+</nav>
+
+<!-- TECH EVENTS -->
+<h2 class="section-title">⚙️ Technical Events</h2>
+
+<div class="grid">
+  <a href="paper.html" class="card-link">
+  <div class="card">
+    <div class="icon">📄</div>
+    <h3>Paper Presentation</h3>
+    <p>Showcase your innovative ideas and research to industry experts.</p>
+  </div></a>
+
+   <a href="cad.html" class="card-link">
+  <div class="card">
+    <div class="icon">🖥️</div>
+    <h3>CAD Master</h3>
+    <p>Design and build creative 3D mechanical models.</p>
+  </div></a>
+   
+  <a href="mech.html" class="card-link">
+  <div class="card">
+    <div class="icon">🔧</div>
+    <h3>Mr. Mechanic</h3>
+    <p>Test your practical mechanical skills and speed.</p>
+  </div></a>
+ <a href="tech.html" class="card-link">
+  <div class="card">
+    <div class="icon">❓</div>
+    <h3>Technical Quiz</h3>
+    <p>Challenge your engineering knowledge and logic.</p>
+  </div></a>
+<a href="project.html" class="card-link">
+  <div class="card">
+    <div class="icon">📊</div>
+    <h3>Project Expo</h3>
+    <p>Display your working models and innovations.</p>
+  </div></a>
+<a href="welding.html" class="card-link">
+  <div class="card">
+    <div class="icon">⚙️</div>
+    <h3>Welding Skills</h3>
+    <p>Demonstrate precision and fabrication skills.</p>
+  </div></a>
+<a href="lathe.html" class="card-link">
+  <div class="card">
+    <div class="icon">🛠️</div>
+    <h3>Mr. Lathe</h3>
+    <p>Operate machines with accuracy and expertise.</p>
+  </div></a>
+<a href="drill.html" class="card-link">
+  <div class="card">
+    <div class="icon">🔩</div>
+    <h3>Drilling Expert</h3>
+    <p>Test your machining precision and control.</p>
+  </div></a>
+
+</div>
+
+<!-- NON TECH EVENTS -->
+<h2 class="section-title">🎉 Non-Technical Events</h2>
+
+<div class="grid">
+<a href="photo.html" class="card-link">
+  <div class="card">
+    <div class="icon">📸</div>
+    <h3>Photography</h3>
+    <p>Capture creative moments and showcase your vision.</p>
+  </div></a>
+<a href="start.html" class="card-link">
+  <div class="card">
+    <div class="icon">🚀</div>
+    <h3>Start-up Ideas</h3>
+    <p>Pitch innovative business ideas to judges.</p>
+  </div></a>
+<a href="treasure.html" class="card-link">
+  <div class="card">
+    <div class="icon">🗺️</div>
+    <h3>Treasure Hunt</h3>
+    <p>Follow clues and solve puzzles in a fun challenge.</p>
+  </div></a>
+<a href="water.html" class="card-link">
+  <div class="card">
+    <div class="icon">💧</div>
+    <h3>Water Rocketry</h3>
+    <p>Design and launch your own rocket creatively.</p>
+  </div></a>
+<a href="spot.html" class="card-link">
+   <div class="card">
+  <div class="icon">🎭</div>
+  <h3>Spot Acting</h3>
+  <p>A fun and spontaneous event where participants perform short scenes on the spot based on given situations, showcasing their creativity, expression, and acting skills.</p>
+</div></a>
+
+</div>
+
+</body>
+</html>

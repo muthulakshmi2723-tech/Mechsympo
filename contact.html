@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0a0f1c;
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: #0d1424;
+}
+
+.navbar h2 {
+  margin: 0;
+}
+
+.navbar a {
+  color: #fcfaf9;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.navbar a:hover {
+  color: rgb(44, 199, 191);
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.hero span {
+  color: red;
+}
+
+.hero p {
+  color: #aaa;
+  margin-top: 10px;
+}
+
+/* CONTACT CARDS */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #121a2b;
+  padding: 30px;
+  border-radius: 20px;
+  width: 280px;
+  text-align: center;
+  transition: 0.3s;
+  border: 1px solid transparent;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  border: 1px solid rgb(156, 103, 24);
+}
+
+.circle {
+  width: 70px;
+  height: 70px;
+  border: 2px solid rgb(165, 118, 17);
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.btn {
+  margin-top: 15px;
+  background: #007bff;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* LOCATION */
+.location {
+  padding: 40px;
+  text-align: center;
+}
+
+.map iframe {
+  width: 90%;
+  height: 300px;
+  border-radius: 20px;
+  border: none;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: #aaa;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <h2>MECNOVATE '26</h2>
+  <div>
+    <a href="index.html">🏠 Home</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>CONTACT <span>US</span></h1>
+  <p>Reach out for event details and queries</p>
+</div>
+
+<!-- CONTACT CARDS -->
+<div class="cards">
+
+  <div class="card">
+    <div class="circle">N</div>
+    <h3> NISHANTH M</h3>
+    <p>📞 9361119721</p>
+    <a href="tel:9361119721" class="btn">Call Now</a>
+  </div>
+
+  <div class="card">
+    <div class="circle">P</div>
+    <h3>PRASANTH S</h3>
+    <p>📞 9025344277</p>
+    <a href="tel:9025344277" class="btn">Call Now</a>
+  </div>
+
+</div>
+
+<!-- LOCATION -->
+<div class="location">
+  <h2>Our Location</h2>
+  <p>Government College of Engineering - Srirangam</p>
+
+  <div class="map">
+    <iframe src="https://maps.google.com/maps?q=Government%20College%20of%20Engineering%20Srirangam&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  © 2026 Altronix | All Rights Reserved
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Treasure Hunt</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* BACKGROUND */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top, #020617, #000);
+  color: white;
+  overflow-x: hidden;
+}
+
+/* GLOW EFFECT BACKGROUND */
+body::before {
+  content: "";
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  background: #00f5ff;
+  filter: blur(200px);
+  top: -100px;
+  left: -100px;
+  opacity: 0.2;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  background: #ff3b3b;
+  filter: blur(200px);
+  bottom: -100px;
+  right: -100px;
+  opacity: 0.2;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 950px;
+  margin: 60px auto;
+  padding: 40px;
+  border-radius: 25px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(25px);
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 40px rgba(0,245,255,0.15);
+  animation: fadeUp 0.8s ease;
+}
+
+/* TAG */
+.tag {
+  display: inline-block;
+  background: linear-gradient(90deg,#ff3b3b,#ff6b6b);
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+/* TITLE */
+h1 {
+  font-family: 'Orbitron';
+  font-size: 45px;
+  background: linear-gradient(90deg,#fff,#00f5ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  color: #00f5ff;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* DESCRIPTION */
+.desc {
+  color: #aaa;
+  line-height: 1.6;
+}
+
+/* INFO GRID */
+.info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.box {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: 0.3s;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0,245,255,0.3);
+}
+
+/* SECTION */
+.section {
+  margin-top: 35px;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.section h3 {
+  margin-bottom: 10px;
+  color: #00f5ff;
+}
+
+ul {
+  padding-left: 20px;
+  color: #bbb;
+}
+
+/* BUTTON */
+.btn {
+  display: block;
+  text-align: center;
+  margin-top: 40px;
+  padding: 16px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg,#d37640,#e0514c);
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0,245,255,0.6);
+}
+
+/* ANIMATION */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<span class="tag">NON-TECHNICAL EVENT</span>
+
+<h1>TREASURE HUNT</h1>
+<p class="subtitle">🗺️ Decode & Discover</p>
+
+<p class="desc">
+An exciting and adventurous event where teams solve clues and complete challenges to uncover hidden treasures. 
+Participants must use their logical thinking, teamwork, and problem-solving skills to follow a sequence of clues, 
+navigate through different locations, and reach the final destination within the given time.
+</p>
+<div class="info">
+  
+  <div class="box">👥 <b>Team (Max 4 - 5 members)</b></div>
+  <div class="box">🏆 <b>Prize Pool - ₹1000</b></div>
+</div>
+<div class="section">
+  <h3>📜 Rules</h3>
+  <ul>
+  <ul>
+  <li>Participation must be in teams of 4–5 members.</li>
+<li>Each team must register with a unique team name before the event.</li>
+<li>Clues will be given on the spot and must be followed in sequence.</li>
+<li>Teams must solve each clue to unlock the next stage.</li>
+<li>The hunt will take place within the college campus and surrounding areas only.</li>
+<li>Teams must complete the hunt within the given time limit.</li>
+<li>Use of mobile phones or external help is not allowed unless specified.</li>
+<li>Teams must follow all instructions and designated paths during the hunt.</li>
+<li>Any form of malpractice, misbehavior, or damage to property will lead to disqualification.</li>
+<li>The first team to successfully reach the final point/treasure wins.</li>
+<li>In case of a tie, the team with better time performance will be considered.</li>
+<li>The decision of the judges will be final and binding.</li>
+</ul>
+  </ul>
+</div>
+
+
+
+<div class="section">
+  <h3>📞 Contact</h3>
+  <p><b>PRASANTH S </b><br>+91 9025344277</p>
+</div>
+
+<a href="index.html" class="btn">🏠 Return to Home </a>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Venues</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0a0f1c;
+  color: white;
+}
+
+/* HEADER */
+.header {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+.header span {
+  color: red;
+}
+
+/* ROADMAP */
+.roadmap {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  padding: 40px 0;
+}
+
+/* LINE */
+.roadmap::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background: red;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -2px;
+}
+
+/* CONTAINER */
+.container {
+  padding: 20px 40px;
+  position: relative;
+  width: 50%;
+}
+
+/* LEFT */
+.left {
+  left: -10%;
+}
+
+/* RIGHT */
+.right {
+  left: 50%;
+}
+
+/* BOX */
+.content {
+  background: #121a2b;
+  padding: 20px;
+  border-radius: 15px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.content:hover {
+  transform: scale(1.05);
+  border: 1px solid red;
+}
+
+/* DOT */
+.container::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: -10px;
+  background: red;
+  border-radius: 50%;
+  top: 30px;
+}
+
+.right::before {
+  left: -10px;
+}
+
+/* BUTTON */
+.back {
+  display: block;
+  text-align: center;
+  margin: 40px;
+}
+
+.back a {
+  background: #007bff;
+  padding: 12px 25px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+  <h1>EVENT <span>VENUES</span></h1>
+  <p>Find your event locations easily</p>
+</div>
+
+<div class="roadmap">
+
+  <div class="container left">
+    <div class="content">
+      <h3>Welding Skills</h3>
+      <p>📍 Welding Lab</p>
+    </div>
+  </div>
+
+  <div class="container right">
+    <div class="content">
+      <h3>Drilling Expert</h3>
+      <p>📍 Special Machine Lab</p>
+    </div>
+  </div>
+
+  <div class="container left">
+    <div class="content">
+      <h3>Mr. Lathe</h3>
+      <p>📍 Lathe Lab</p>
+    </div>
+  </div>
+
+  <div class="container right">
+    <div class="content">
+      <h3>CAD Master</h3>
+      <p>📍 CAD Lab</p>
+    </div>
+  </div>
+
+  <div class="container left">
+    <div class="content">
+      <h3>Paper Presentation</h3>
+      <p>📍 Final Year Classroom</p>
+    </div>
+  </div>
+
+  <div class="container right">
+    <div class="content">
+      <h3>Technical Quiz</h3>
+      <p>📍 3rd Year Classroom</p>
+    </div>
+  </div>
+
+  <div class="container left">
+    <div class="content">
+      <h3>Project Expo</h3>
+      <p>📍 Heat & Mass Transfer Lab</p>
+    </div>
+  </div>
+
+  <div class="container right">
+    <div class="content">
+      <h3>Mr. Mechanic</h3>
+      <p>📍 Thermal Lab</p>
+    </div>
+  </div>
+
+  <div class="container left">
+    <div class="content">
+      <h3>Water Rocketry</h3>
+      <p>📍 Football Ground</p>
+    </div>
+  </div>
+
+  <div class="container right">
+    <div class="content">
+      <h3>Treasure Hunt</h3>
+      <p>📍 Auditorium</p>
+    </div>
+  </div>
+
+  <div class="container left">
+    <div class="content">
+      <h3>Startup Ideas</h3>
+      <p>📍 Final Year Classroom</p>
+    </div>
+  </div>
+
+  <div class="container right">
+    <div class="content">
+      <h3>Spot Acting</h3>
+      <p>📍 Auditorium</p>
+    </div>
+  </div>
+
+</div>
+
+<div class="back">
+  <a href="index.html">⬅ Back to Home</a>
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Mechnovate</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* GLOBAL */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top, #020617, #000);
+  color: white;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(10px);
+}
+
+nav h1 {
+  font-family: 'Orbitron';
+  background: linear-gradient(90deg,#eb552f,#da952f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ABOUT SECTION */
+.about {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.about h2 {
+  font-family: 'Orbitron';
+  font-size: 40px;
+  background: linear-gradient(90deg,#ff3b3b,#00f5ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 20px auto;
+  color: #aaa;
+  line-height: 1.6;
+}
+
+nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color:  #fdfcfc;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00f5ff;
+}
+
+/* SECTION TITLE */
+.section-title {
+  text-align: center;
+  margin-top: 50px;
+  letter-spacing: 3px;
+  color: #777;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  gap: 30px;
+  padding: 40px;
+}
+
+/* CARD */
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: 0.4s;
+  position: relative;
+}
+
+/* ICON CIRCLE */
+.icon {
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  border-radius: 50%;
+  border: 2px solid #00f5ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+/* CARD TEXT */
+.card h3 {
+  margin: 10px 0;
+}
+
+.card p {
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* HOVER EFFECT */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px rgba(0,245,255,0.3);
+}
+
+/* SPECIAL HOD CARD */
+.hod {
+  max-width: 350px;
+  margin: 40px auto;
+  border: 1px solid #d3b633;
+  box-shadow: 0 0 20px rgba(255,59,59,0.3);
+}
+
+
+/* ANIMATION */
+.card {
+  animation: fadeUp 0.8s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <h1>MECNOVATE '26</h1>
+  <ul>
+    <li><a href="index.html">🏠 Home</a></li>
+  </ul>
+</nav>
+
+
+<!-- ABOUT -->
+<section class="about">
+  <h2>About Mecnovate' 26</h2>
+  <p>
+    <b style="color: rgb(18, 180, 180);">Mecnovate' 26</b> is a national-level technical symposium organized by the Department of Mechanical Engineering, aimed at fostering innovation, technical excellence, and creative thinking among students. The symposium provides a dynamic platform for participants to showcase their talents through a wide range of technical and non-technical events, encouraging knowledge sharing and practical learning. It brings together aspiring engineers from various institutions to collaborate, compete, and explore emerging technologies in the field of mechanical engineering. The event is guided and coordinated under the leadership of <b style="color: rgb(18, 180, 180);">Dr. V. Manieniyan, Symposium Coordinator,</b> whose dedication and vision play a vital role in making a successful and impactful event.
+  </p>
+</section>
+
+<!-- HOD -->
+<h3 class="section-title">HEAD OF DEPARTMENT</h3>
+
+<div class="card hod">
+  <div class="icon">🎓</div>
+  <h3>Dr. J. SELWIN RAJADURAI</h3>
+  <p>Professor(CAS) & Head of Department</p>
+</div>
+
+<!-- ASSOCIATE PROFESSORS -->
+<h3 class="section-title">ASSOCIATE PROFESSORS</h3>
+
+<div class="grid">
+  <div class="card">
+    <div class="icon">🎓</div>
+    <h3>Dr. T. Suja</h3>
+    <p>Associate Professor</p>
+  </div>
+
+  <div class="card">
+    <div class="icon">🎓</div>
+    <h3>Dr. A. kajavali</h3>
+    <p>Associate Professor (CAS)</p>
+  </div>
+
+  <div class="card">
+    <div class="icon">🎓</div>
+    <h3>Dr. M. Rajamuthamil Selavan</h3>
+    <p>Associate Professor (CAS)</p>
+  </div>
+
+  <div class="card">
+    <div class="icon">🎓</div>
+    <h3>Dr. V. Manieniyan</h3>
+    <p>Associate Professor (CAS)</p>
+  </div>
+</div>
+
+<!-- PROFESSORS -->
+<h3 class="section-title">ASSISTANT PROFESSORS</h3>
+
+<div class="grid">
+  <div class="card">
+    <div class="icon">🎓</div>
+    <h3>Dr. N. Ramasubbu</h3>
+    <p>Assistant Professor</p>
+  </div>
+
+  <div class="card">
+    <div class="icon">🎓</div>
+    <h3>Dr. I. Rahamathullah</h3>
+    <p>Assistant Professor</p>
+  </div>
+
+  <div class="card">
+    <div class="icon">🎓</div>
+    <h3>Prof. B. Suresh Kumar</h3>
+    <p>Assistant Professor</p>
+  </div>
+
+  <div class="card">
+    <div class="icon">🎓</div>
+    <h3>Dr. C. Rajaganapathy</h3>
+    <p>Assistant Professor</p>
+  </div>
+
+  <div class="card">
+    <div class="icon">🎓</div>
+    <h3>Dr. R. Varthini</h3>
+    <p>Assistant Professor</p>
+  </div>
+
+  <div class="card">
+    <div class="icon">🎓</div>
+    <h3>Dr.A.Baskaran</h3>
+    <p>Assistant Professor (On Deputation from Annamalai University)</p>
+  </div>
+
+  <div class="card">
+    <div class="icon">🎓</div>
+    <h3>Dr. T. V. Rajamurugan</h3>
+    <p>Assistant Professor (On Deputation from Annamalai University)</p>
+  </div>
+
+</div>
+
+<!-- ADHOC -->
+<h3 class="section-title">ASSISTANT PROFESSORS (ADHOC)</h3>
+
+<div class="grid">
+  <div class="card">
+    <div class="icon">🎓</div>
+    <h3>Mr. P. Clemens Julius Ceaser</h3>
+    <p>Assistant Professor (Adhoc)</p>
+  </div>
+
+  <div class="card">
+    <div class="icon">🎓</div>
+    <h3>Dr. N. Annamalai</h3>
+    <p>Assistant Professor (Adhoc)</p>
+  </div>
+</div>
+
+</body>
+</html>
